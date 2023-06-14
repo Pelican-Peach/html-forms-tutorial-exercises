@@ -3,23 +3,28 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="styles.css" />
 		<title>4Geeks Academy</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
-
 	<body>
-		<form action="#" method="post" target="_parent">
+		<form action="#" method="get" target="_parent">
 			<fieldset>
-				<label for="firstname">First Name</label>
+				<legend>Full Name</legend>
+				<label for="firstname">First:</label>
 				<input type="Text" name="firstname" placeholder="Your Name" />
-			</fieldset>
-			<fieldset>
-				<label for="lastname">Last Name</label>
+				<label for="lastname">Last:</label>
 				<input type="Text" name="lastname" placeholder="Your Last Name" />
 			</fieldset>
 			<fieldset>
-				<label for="email">Email</label>
+				<legend>Email</legend>
 				<input type="Text" name="email" placeholder="username@domain.com" />
+			</fieldset>
+			<fieldset>
+				<legend>Gender</legend>
+				<label for="gender">Male:</label>
+				<input type="radio" name="gender" value="male" />
+				<label for="gender">Female:</label>
+				<input type="radio" name="gender" value="female" />
 			</fieldset>
 			<input type="submit" value="SUBSCRIBE" />
 		</form>
